@@ -1,0 +1,27 @@
+:root{
+    --button-plus-color: #f44336;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.btn-plus{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: var(--button-plus-color) ;
+    border-radius: 50px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+    position: fixed;
+    right: 60px;
+    bottom: 60px;
+}
