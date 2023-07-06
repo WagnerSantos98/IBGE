@@ -2,22 +2,54 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Compiled CSS-->
-    <link rel="stylesheet" href="assets/dist/css/uikit.min.css">
-    <link rel="stylesheet" href="assets/dist/css/syle.css">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+     <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+     
 
-    <!--Compiled JS-->
-    <script src="assets/dist/js/uikit.min.js"></script>
-    <!--Material Icons-->
-    <script src="assets/dist/js/uikit-icons.min.js"></script>
+   
     <title>IBGE</title>
+
 </head>
 <body>
-    <div class="uk-container">
+
+  <div class="container">
+        <!--Buttons-->
+        <div class="fixed-action-btn horizontal click-to-toggle spin-close">
+            <a class="btn-floating btn-large red">
+            <i class="material-icons">menu</i>
+            </a>
+            <ul>
+            <li><a class="waves-effec waves-light btn-floating yellow darken-1 modal-trigger" href="#modal-indice"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="waves-effec waves-light btn-floating green modal-trigger" href="#modal-media"><i class="material-icons">pie_chart</i></a></li>
+            <li><a class="waves-effec waves-light btn-floating blue modal-trigger" href="#modal-info"><i class="material-icons">info</i></a></li>
+            </ul>
+        </div>
+
+        <!--Cards-->
+        <div class="row row-card">
+            <div class="col s6 m2">
+                <div class="card">
+                    <div class="card-content black-text">
+                        <span class="card-title" id="card-icon"><i class="material-icons">location_city</i></span>
+                        
+                        <span class="card-text">[Número de cidades brasileiras]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         
-            <button class="uk-button btn-plus"><i class="uk-icon-plus my-float" uk-icon="plus"></i></button>
-        
-    </div>
+  
+  </div>
+    
+
+  <script src="assets/dist/js/app.js"></script>
 </body>
 </html>
